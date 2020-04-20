@@ -1,5 +1,5 @@
 {
-  "name": "logicjs",
+  "name": "@stromhalm/logicjs",
   "version": "1.0.0",
   "type": "module",
   "description": "Logic programming for JavaScript.",
