@@ -1,4 +1,6 @@
-if(typeof require !== 'undefined') logic = require('./logic.js')
+import { logic } from './logic.js'
+
+var write, range, ones, twos, g1, g2, g3, s1, s2, s3, l1, l2, l3, l4, s, g, r, write
 
 write = console.log
 
