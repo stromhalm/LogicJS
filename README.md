@@ -1,6 +1,10 @@
 LogicJS
 =======
 
+This is a fork of the wonderful [LogicJS](https://github.com/mcsoto/LogicJS) library. All credits go to the original authors. It has been carefully adapted to satisfy JavaScript `strict mode` and support ES6 modules.
+
+=======
+
 LogicJS adds logic programming to JavaScript.
 
 Logic programming is typically known by the language Prolog.
@@ -8,11 +12,9 @@ Logic programming is typically known by the language Prolog.
 Installation
 =======
 
-Download the *logic.js* file and move it to your project.
-
-If using npm,
+Install using npm:
 ```sh
-npm install logicjs
+npm install @stromhalm/logicjs
 ```
 
 Introduction
