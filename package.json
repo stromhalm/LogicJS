@@ -1,9 +1,9 @@
 {
   "name": "@stromhalm/logicjs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "type": "module",
   "description": "Logic programming for JavaScript.",
-  "main": "logic.mjs",
+  "main": "logic.js",
   "scripts": {
     "test": "node --experimental-modules test.js"
   },
