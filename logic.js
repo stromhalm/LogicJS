@@ -1,11 +1,9 @@
-(function() {
-
 //utils
 function assert(x,str) {
 	if (x===false) throw new Error(str)
 }
 
-var logic = {}
+export var logic = {}
 var write = ((typeof console === 'object') && (typeof console.log !== 'undefined')) ? console.log : function(){}
 
 var inf = 1/0 //we start with a division by zero. this is a good start.
@@ -15,7 +13,7 @@ var minus_inf = (-1)*inf
 	domains (for clp)
 */
 
-REAL_DOMAIN = make_domain(minus_inf, inf)
+var REAL_DOMAIN = make_domain(minus_inf, inf)
 
 function Domain(min, max) {
 	this.min=min
@@ -216,7 +214,7 @@ function mul_c(x,y,z) {
 	}
 }
 
-clpr = {
+var clpr = {
 	dom : function (x, min, max) {
 		assert(typeof min==='number' && typeof max==='number', '#2-3 arguments of dom must be number.')
 		return function (p) {
@@ -393,8 +391,8 @@ Package.prototype.lookup_domain_binding = function (variable) {
 	return this.lookup_binding_helper(this.domains, variable)
 }
 
-Package.prototype.is_empty = function (arguments) {
-	return this.frame.is_empty(arguments)
+Package.prototype.is_empty = function (args) {
+	return this.frame.is_empty(args)
 }
 
 Package.prototype.set_frame = function (f) {
@@ -427,8 +425,8 @@ Package.prototype.extend_constraint = function (c) {
 	return logic.make_package(this.frame, this.store.extend(c), this.domains)
 }
 
-Package.prototype.extend = function (arguments) {
-	return logic.make_package(this.frame.extend(arguments), this.store, this.domains)
+Package.prototype.extend = function (args) {
+	return logic.make_package(this.frame.extend(args), this.store, this.domains)
 }
 
 Package.prototype.toString = function() {
@@ -713,7 +711,7 @@ logic.disj = function (g1, g2) {
 	}
 }
 logic.or = function() {
-	args = Array.prototype.slice.call(arguments)
+	var args = Array.prototype.slice.call(arguments)
 	if(args.length===0) 
 		return logic.fail
 	if(args.length===1)
@@ -732,7 +730,7 @@ logic.conj = function (g1, g2) {
 	}
 }
 logic.and = function() {
-	args = Array.prototype.slice.call(arguments)
+	var args = Array.prototype.slice.call(arguments)
 	if(args.length===0) 
 		return logic.win
 	if(args.length===1)
@@ -799,17 +797,3 @@ logic.run = function (g, v, n) {
 	}
 	return result
 }
-
-//export module to nodejs/browser
-if (typeof exports !== 'undefined') {
-	if (typeof module !== 'undefined' && module.exports) {
-	  exports = module.exports = logic;
-	}
-	exports.logic = logic;
-} 
-else {
-	this.logic = logic;
-}
-
-
-}).call(this);
