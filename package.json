@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "type": "module",
   "description": "Logic programming for JavaScript.",
-  "main": "logic.js",
+  "main": "logic.mjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node --experimental-modules test.js"
   },
   "author": "",
   "license": "ISC"
