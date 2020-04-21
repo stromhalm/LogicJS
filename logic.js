@@ -3,7 +3,7 @@ function assert(x,str) {
 	if (x===false) throw new Error(str)
 }
 
-export var logic = {}
+export default logic = {}
 var write = ((typeof console === 'object') && (typeof console.log !== 'undefined')) ? console.log : function(){}
 
 var inf = 1/0 //we start with a division by zero. this is a good start.

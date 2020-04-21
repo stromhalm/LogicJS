@@ -1,8 +1,9 @@
-LogicJS
+LogicJS ES6
 =======
 
-This is a fork of the wonderful [LogicJS](https://github.com/mcsoto/LogicJS) library. All credits go to the original authors. It has been carefully adapted to satisfy JavaScript `strict mode` and support ES6 modules.
+This is a fork of the wonderful [LogicJS](https://github.com/mcsoto/LogicJS) library. All credits go to the original authors. It has been carefully adapted to satisfy JavaScript `strict mode` and to support ES6 modules. As a result, this version runs beautifully in your Webpack enabled application, for example your [Svelte](https://svelte.dev) component or virtually any other framework that supports code splitting.
 
+LogicJS
 =======
 
 LogicJS adds logic programming to JavaScript.
@@ -15,6 +16,11 @@ Installation
 Install using npm:
 ```sh
 npm install @stromhalm/logicjs
+```
+
+Import as an ES6 module:
+```javascript
+import logic from '@stromhalm/logicjs'
 ```
 
 Introduction
