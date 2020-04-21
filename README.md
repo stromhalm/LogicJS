@@ -17,12 +17,12 @@ Installation
 
 Install using npm:
 ```sh
-npm install @stromhalm/logicjs
+npm install logicjs-es6
 ```
 
 Import as an ES6 module:
 ```javascript
-import logic from '@stromhalm/logicjs'
+import logic from 'logicjs-es6'
 ```
 
 Introduction
