@@ -1,7 +1,9 @@
 LogicJS ES6
 =======
 
-This is a fork of the wonderful [LogicJS](https://github.com/mcsoto/LogicJS) library. All credits go to the original authors. It has been carefully adapted to satisfy JavaScript `strict mode` and to support ES6 modules. As a result, this version runs beautifully in your Webpack enabled application, for example your [Svelte](https://svelte.dev) component or virtually any other framework that supports code splitting.
+This is a fork of the wonderful [LogicJS](https://github.com/mcsoto/LogicJS) library. All credits go to the original authors.
+
+It has been carefully adapted to satisfy JavaScript `strict mode` and to support ES6 modules. As a result, this version runs beautifully in your Rollup and Webpack enabled applications, for example your [Svelte](https://svelte.dev) component or virtually any other framework that relies on `import`/`export` for bundling, lazy loading and code splitting.
 
 LogicJS
 =======
