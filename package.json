@@ -1,6 +1,6 @@
 {
   "name": "logicjs-es6",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "type": "module",
   "author": "Adrian Jagusch",
   "homepage": "https://adrian-jagusch.de",
@@ -9,6 +9,7 @@
     "url": "https://github.com/stromhalm/LogicJS-ES6"
   },
   "description": "Logic programming for JavaScript. Using ES6 modules.",
+  "keywords": ["logic", "logicjs", "logic programming", "prolog", "es6"],
   "main": "logic.js",
   "scripts": {
     "test": "node --experimental-modules test.js"
