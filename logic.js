@@ -3,6 +3,7 @@ function assert(x,str) {
 	if (x===false) throw new Error(str)
 }
 
+var logic
 export default logic = {}
 var write = ((typeof console === 'object') && (typeof console.log !== 'undefined')) ? console.log : function(){}
 
